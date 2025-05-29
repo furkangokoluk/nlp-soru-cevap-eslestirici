@@ -9,6 +9,8 @@ from preprocessing import TextPreprocessor
 from tfidf_model import TFIDFModel
 from word2vec_model import Word2VecModel
 from qa_matcher import QAMatcher
+from similarity_analysis import SimilarityAnalyzer
+from model_evaluation import ModelEvaluator
 import pandas as pd
 
 def create_directories():
@@ -105,6 +107,33 @@ def analyze_zipf_for_all_data(processed_file):
         print(results_df)
 
 
+def run_similarity_analysis(processed_file):
+    """Benzerlik analizi yap"""
+    print("\nBenzerlik analizi başlıyor...")
+    analyzer = SimilarityAnalyzer()
+    
+    # Test sorusu
+    test_question = "Python nedir?"
+    print(f"\nTest sorusu: {test_question}")
+    
+    # Analizi gerçekleştir
+    results = analyzer.analyze_similarities(test_question, processed_file)
+    print("\nBenzerlik analizi tamamlandı!")
+    return results
+
+def run_model_evaluation():
+    """Model değerlendirmesi yap"""
+    print("\nModel değerlendirmesi başlıyor...")
+    evaluator = ModelEvaluator()
+    evaluator.run_evaluation()
+    
+    # Model yapılandırmalarını analiz et
+    results_df = pd.read_csv(os.path.join(evaluator.evaluation_dir, 'evaluation_results.csv'))
+    config_analysis = evaluator.analyze_model_configurations(results_df)
+    
+    print("\nModel değerlendirmesi tamamlandı!")
+    return config_analysis
+
 def main():
     # Başlangıç zamanını kaydet
     main_start_time = time.time()
@@ -195,7 +224,13 @@ def main():
         updated = qa_matcher.update_model()
         print(f"Model güncelleme sonucu: {updated}")
 
-    # 6. Sonuç analizi çıktısı
+    # 6. Benzerlik analizi
+    similarity_results = run_similarity_analysis(processed_file)
+
+    # 7. Model değerlendirmesi
+    evaluation_results = run_model_evaluation()
+
+    # 8. Sonuç analizi çıktısı
     print("\nTF-IDF Sonuçları:")
     for prefix in ['lemma', 'stem']:
         result_csv = f'results/tfidf_{prefix}_results.csv'

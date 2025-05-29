@@ -1,0 +1,91 @@
+model,text,similarity
+tfidf_lemma,teksas resmi dili nedir,0.5754037436868213
+tfidf_lemma,eritre nin resmi dili nedir,0.4511059001560017
+tfidf_lemma,alternatif programlama başkanı,0.34693667585333615
+tfidf_lemma,dans dili,0.32209185737706664
+tfidf_lemma,estonya nın kelime dağarcığının germen kısmını aldığı ana germen dili nedir,0.31840167531482155
+tfidf_stem,teksas resmi dili nedir,0.5754037436868213
+tfidf_stem,eritre nin resmi dili nedir,0.4511059001560017
+tfidf_stem,alternatif programlama başkanı,0.34693667585333615
+tfidf_stem,dans dili,0.32209185737706664
+tfidf_stem,estonya nın kelime dağarcığının germen kısmını aldığı ana germen dili nedir,0.31840167531482155
+lemma_sg0_vs300_w4,substrat dili,0.964109835360679
+lemma_sg0_vs300_w4,makine dili,0.9542902601114862
+lemma_sg0_vs300_w4,konuşma dili kaba ifadeler,0.9501101366679428
+lemma_sg0_vs300_w4,biçimsel ifadeler yazı dili,0.9374474780832469
+lemma_sg0_vs300_w4,romansh dili lehçeye benzer,0.9172718905925039
+lemma_sg0_vs300_w2,substrat dili,0.9740996480363394
+lemma_sg0_vs300_w2,konuşma dili kaba ifadeler,0.9580677344050844
+lemma_sg0_vs300_w2,makine dili,0.9499685512038947
+lemma_sg0_vs300_w2,biçimsel ifadeler yazı dili,0.947043763905832
+lemma_sg0_vs300_w2,romantizm dili,0.9164661487857162
+lemma_sg0_vs100_w4,substrat dili,0.969948957760668
+lemma_sg0_vs100_w4,makine dili,0.9646354702843271
+lemma_sg0_vs100_w4,konuşma dili kaba ifadeler,0.9537324662433752
+lemma_sg0_vs100_w4,biçimsel ifadeler yazı dili,0.9339368817448951
+lemma_sg0_vs100_w4,dans dili,0.9223264546414431
+lemma_sg0_vs100_w2,substrat dili,0.9717555677914513
+lemma_sg0_vs100_w2,makine dili,0.9480021467780062
+lemma_sg0_vs100_w2,konuşma dili kaba ifadeler,0.9474853840510898
+lemma_sg0_vs100_w2,biçimsel ifadeler yazı dili,0.9438809898545399
+lemma_sg0_vs100_w2,romantizm dili,0.9116144859925743
+lemma_sg1_vs300_w4,substrat dili,0.9248734307817842
+lemma_sg1_vs300_w4,makine dili,0.9118385855333779
+lemma_sg1_vs300_w4,biçimsel ifadeler yazı dili,0.8937758527910377
+lemma_sg1_vs300_w4,konuşma dili kaba ifadeler,0.8707313968682551
+lemma_sg1_vs300_w4,bilgisayarın montaj dili bilinir,0.838408028906079
+lemma_sg1_vs300_w2,substrat dili,0.9479584747812277
+lemma_sg1_vs300_w2,biçimsel ifadeler yazı dili,0.927402030579586
+lemma_sg1_vs300_w2,konuşma dili kaba ifadeler,0.9211010239981434
+lemma_sg1_vs300_w2,makine dili,0.9210925005444002
+lemma_sg1_vs300_w2,romantizm dili,0.892913314448191
+lemma_sg1_vs100_w4,substrat dili,0.9248022563151217
+lemma_sg1_vs100_w4,makine dili,0.9086214014272056
+lemma_sg1_vs100_w4,biçimsel ifadeler yazı dili,0.9051725252951162
+lemma_sg1_vs100_w4,konuşma dili kaba ifadeler,0.8729190333362702
+lemma_sg1_vs100_w4,romansh dili lehçeye benzer,0.8512760691658205
+lemma_sg1_vs100_w2,substrat dili,0.9446526250095775
+lemma_sg1_vs100_w2,biçimsel ifadeler yazı dili,0.9302116986354232
+lemma_sg1_vs100_w2,konuşma dili kaba ifadeler,0.9250286488337547
+lemma_sg1_vs100_w2,makine dili,0.9100267320024997
+lemma_sg1_vs100_w2,bilgisayarın montaj dili bilinir,0.8917105081638734
+stem_sg0_vs300_w4,substrat dili,0.9667751035741363
+stem_sg0_vs300_w4,makine dili,0.9640393347683351
+stem_sg0_vs300_w4,konuşma dili kaba ifadeler,0.955526016528734
+stem_sg0_vs300_w4,biçimsel ifadeler yazı dili,0.9399061005317535
+stem_sg0_vs300_w4,dans dili,0.924616543877584
+stem_sg0_vs300_w2,substrat dili,0.9743130656252995
+stem_sg0_vs300_w2,konuşma dili kaba ifadeler,0.9519103566174595
+stem_sg0_vs300_w2,makine dili,0.9500671475196509
+stem_sg0_vs300_w2,biçimsel ifadeler yazı dili,0.9472210461272013
+stem_sg0_vs300_w2,dans dili,0.9138113636070307
+stem_sg0_vs100_w4,makine dili,0.9639926118256491
+stem_sg0_vs100_w4,substrat dili,0.9638782331626015
+stem_sg0_vs100_w4,konuşma dili kaba ifadeler,0.9539288810483992
+stem_sg0_vs100_w4,biçimsel ifadeler yazı dili,0.933417115536993
+stem_sg0_vs100_w4,romantizm dili,0.9096960669116241
+stem_sg0_vs100_w2,substrat dili,0.9729471660523266
+stem_sg0_vs100_w2,konuşma dili kaba ifadeler,0.9491927109322897
+stem_sg0_vs100_w2,makine dili,0.9461520854130847
+stem_sg0_vs100_w2,biçimsel ifadeler yazı dili,0.9390828382333416
+stem_sg0_vs100_w2,dans dili,0.9161360330490979
+stem_sg1_vs300_w4,substrat dili,0.9206000386182246
+stem_sg1_vs300_w4,makine dili,0.8878925700832256
+stem_sg1_vs300_w4,biçimsel ifadeler yazı dili,0.8790779147811083
+stem_sg1_vs300_w4,konuşma dili kaba ifadeler,0.8573879836443131
+stem_sg1_vs300_w4,bilgisayarın montaj dili bilinir,0.836432477175816
+stem_sg1_vs300_w2,substrat dili,0.9459452688758218
+stem_sg1_vs300_w2,konuşma dili kaba ifadeler,0.9151044800710819
+stem_sg1_vs300_w2,makine dili,0.9149012988427724
+stem_sg1_vs300_w2,biçimsel ifadeler yazı dili,0.9128034200916975
+stem_sg1_vs300_w2,romantizm dili,0.8772780493228779
+stem_sg1_vs100_w4,substrat dili,0.9218492238083316
+stem_sg1_vs100_w4,biçimsel ifadeler yazı dili,0.9008388672521529
+stem_sg1_vs100_w4,makine dili,0.895900632419689
+stem_sg1_vs100_w4,konuşma dili kaba ifadeler,0.8664579257125886
+stem_sg1_vs100_w4,bilgisayarın montaj dili bilinir,0.8482392672508299
+stem_sg1_vs100_w2,substrat dili,0.9453843417163313
+stem_sg1_vs100_w2,konuşma dili kaba ifadeler,0.9254088633762007
+stem_sg1_vs100_w2,biçimsel ifadeler yazı dili,0.9236193359851476
+stem_sg1_vs100_w2,makine dili,0.9212394941931629
+stem_sg1_vs100_w2,romantizm dili,0.8964475383246687

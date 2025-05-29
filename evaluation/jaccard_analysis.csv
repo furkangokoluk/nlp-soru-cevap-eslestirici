@@ -1,0 +1,10 @@
+group1,group2,mean_similarity,std_similarity
+tfidf,tfidf,1.0,0.0
+tfidf,word2vec_cbow,0.05555555555555555,0.05555555555555555
+tfidf,word2vec_skipgram,0.0,0.0
+word2vec_cbow,tfidf,0.05555555555555555,0.05555555555555555
+word2vec_cbow,word2vec_cbow,0.7738095238095237,0.1556749622693098
+word2vec_cbow,word2vec_skipgram,0.71875,0.1210307295689818
+word2vec_skipgram,tfidf,0.0,0.0
+word2vec_skipgram,word2vec_cbow,0.71875,0.1210307295689818
+word2vec_skipgram,word2vec_skipgram,0.7738095238095237,0.1556749622693098

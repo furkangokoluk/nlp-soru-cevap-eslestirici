@@ -28,13 +28,16 @@ Bu veri seti şu amaçlarla kullanılabilir:
 
 ### Gerekli Kütüphaneler
 ```bash
-numpy>=1.21.0
-pandas>=1.3.0
-gensim>=4.1.0
-scikit-learn>=0.24.0
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+gensim>=4.3.1
+nltk>=3.8.1
 zemberek-python>=0.1.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
+tqdm>=4.65.0
+matplotlib>=3.7.1
+seaborn>=0.12.2
+fpdf>=1.7.2
 ```
 
 ### Kurulum Adımları
@@ -80,7 +83,6 @@ python tfidf_model.py
 - İşlenmiş verileri yükler
 - TF-IDF vektörlerini hesaplar
 - Modeli kaydeder (.pkl formatında)
-- Benzerlik skorlarını hesaplar
 
 3. **Word2Vec Model Eğitimi**
 ```bash
@@ -91,7 +93,28 @@ python word2vec_model.py
 - Vektörleri .pkl formatında kaydeder
 - Performans metriklerini hesaplar
 
-4. **Tüm Pipeline'ı Çalıştırma**
+4. **Benzerlik Analizi**
+```bash
+python similarity_analysis.py
+```
+- TF-IDF ve Word2Vec modellerini yükler
+- Metin benzerliği hesaplar
+- Jaccard benzerlik matrisi oluşturur
+- Benzerlik sonuçlarını görselleştirir
+- Sonuçları CSV formatında kaydeder
+
+5. **Model Değerlendirmesi**
+```bash
+python model_evaluation.py
+```
+- Benzerlik sonuçlarını yükler
+- Otomatik puan hesaplama
+- Model performans karşılaştırması
+- Jaccard benzerlik analizi
+- Model yapılandırma analizi
+- Değerlendirme sonuçlarını görselleştirir
+
+6. **Tüm Pipeline'ı Çalıştırma**
 ```bash
 python main.py
 ```
@@ -116,12 +139,25 @@ python main.py
 2. TF-IDF model eğitimi/yükleme
 3. Word2Vec modelleri eğitimi/yükleme
 4. Performans metrikleri hesaplama
+5. Benzerlik analizi ve model değerlendirmesi
+6. Soru-cevap eşleştirme ve geribildirim sistemi
+
+### Yeni Özellikler
+- **Otomatik Model Değerlendirmesi**: Model performansını otomatik olarak değerlendirir ve puanlar
+- **Benzerlik Analizi**: TF-IDF ve Word2Vec modelleri arasında benzerlik karşılaştırması yapar
+- **Jaccard Benzerlik Matrisi**: Modeller arası tutarlılığı görselleştirir
+- **Geribildirim Sistemi**: Kullanıcı geribildirimlerine göre modelleri günceller
+- **Performans Metrikleri**: Detaylı model performans analizi ve görselleştirme
 
 ## Proje Yapısı
 
 - `preprocessing.py`: Metin ön işleme işlemleri
 - `tfidf_model.py`: TF-IDF tabanlı analiz
 - `word2vec_model.py`: Word2Vec model eğitimi ve analizi
+- `similarity_analysis.py`: Metin benzerliği analizi ve karşılaştırma
+- `model_evaluation.py`: Model performans değerlendirmesi ve metrikler
+- `qa_matcher.py`: Soru-cevap eşleştirme ve geribildirim sistemi
+- `test_feedback.py`: Geribildirim sistemi testleri
 - `main.py`: Ana program akışı
 
 ## Çıktılar
@@ -132,5 +168,14 @@ Proje çalıştırıldığında aşağıdaki dosyalar oluşturulur:
 - `data/lemma_data.csv`: Lemmatize edilmiş veriler
 - `data/stem_data.csv`: Stem'lenmiş veriler
 - `results/tfidf_*_results.csv`: TF-IDF analiz sonuçları
+- `results/similarity_results.csv`: Benzerlik analizi sonuçları
+- `results/model_similarity_matrix.png`: Model benzerlik matrisi görselleştirmesi
+- `results/zipf_analysis_results.csv`: Zipf yasası analiz sonuçları
+- `results/zipf_*_data.png`: Zipf yasası görselleştirmeleri
+- `evaluation/evaluation_results.csv`: Model değerlendirme sonuçları
+- `evaluation/model_scores.png`: Model performans karşılaştırma grafiği
+- `evaluation/jaccard_similarity_matrix.png`: Jaccard benzerlik matrisi görselleştirmesi
+- `evaluation/jaccard_analysis.csv`: Jaccard benzerlik analizi sonuçları
+- `evaluation/model_configuration_analysis.csv`: Model yapılandırma analizi
 - `models/*.model`: Eğitilmiş Word2Vec modelleri
 - `models/word2vec_results_summary.csv`: Word2Vec sonuç özeti
